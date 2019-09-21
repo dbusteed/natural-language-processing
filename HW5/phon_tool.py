@@ -12,6 +12,8 @@ RIME_FACTOR = 3
 ## FUNCTIONS
 def get_rhymes(word):
     
+    word = word.lower()
+
     if len(word.split()) != 1:
         print('please only enter a single word')
         return
@@ -38,6 +40,8 @@ def get_rhymes(word):
 
 
 def get_phones(word):
+
+    word = word.lower()
 
     for w in word.split():
     
