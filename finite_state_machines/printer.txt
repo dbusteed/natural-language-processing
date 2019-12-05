@@ -1,0 +1,19 @@
+digraph printer {
+	
+	label="Printer FSM"
+	labelloc=top;
+	labeljust=left;	
+
+	rankdir=LR;
+	fixedsize=true;
+
+	node [shape = doublecircle]; idle
+	node [shape=ellipse, width=2, height=1, fixedsize=true];
+
+	idle -> checking_status [ label="recieve job" ];
+	checking_status -> printing_job [ label="sufficient ink/paper" ];
+	checking_status -> printer_malfunction [ label="missing ink/paper" ];
+	printing_job -> idle [ label="job finished" ];
+	printing_job -> printer_malfunction [ label="paper jam" ];
+	printer_malfunction -> idle [ label="printer maintainence" ];
+}

@@ -1,0 +1,20 @@
+digraph hello {
+	
+	label="Searching strings for /he+l+o+/"
+	labelloc=top;
+	labeljust=left;	
+
+	rankdir=LR;	
+
+	node [shape = doublecircle]; 4
+	node [shape = circle];
+	
+
+	0 -> 1 [ label="h" ];
+	1 -> 2 [ label="e" ];
+	2 -> 2 [ label="e" ];
+	2 -> 3 [ label="l" ];
+	3 -> 3 [ label="l" ];
+	3 -> 4 [ label="o" ];
+	4 -> 4 [ label="o" ];
+}
