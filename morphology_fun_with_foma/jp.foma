@@ -1,0 +1,49 @@
+read lexc jp.lexc
+def Lexicon ;
+
+def TeU う "^" T E -> って || _ .#. ;
+def TeTsu つ "^" T E -> って || _ .#. ;
+def TeBu ぶ "^" T E -> んで || _ .#. ;
+def TeMu む "^" T E -> んで || _ .#. ;
+def TeNu ぬ "^" T E -> んで || _ .#. ;
+def TeKu く "^" T E -> いて || _ .#. ;
+def TeGu ぐ "^" T E -> いで || _ .#. ;
+def TeSu す "^" T E -> して || _ .#. ;
+def TeRu る "^" T E -> て || _ .#. ;
+
+def TaU う "^" T A -> った || _ .#. ;
+def TaTsu つ "^" T A -> った || _ .#. ;
+def TaBu ぶ "^" T A -> んだ || _ .#. ;
+def TaMu む "^" T A -> んだ || _ .#. ;
+def TaNu ぬ "^" T A -> んだ || _ .#. ;
+def TaKu く "^" T A -> いた || _ .#. ;
+def TaGu ぐ "^" T A -> いだ || _ .#. ;
+def TaSu す "^" T A -> した || _ .#. ;
+def TaRu る "^" T A -> た || _ .#. ;
+
+def TeJ い "^" T E -> くて || _ .#. ;
+def TaJ い "^" T A -> かった || _ .#. ;
+
+def All Lexicon .o. 
+        TeU .o. 
+        TeTsu .o. 
+        TeBu .o. 
+        TeMu .o. 
+        TeNu .o. 
+        TeKu .o. 
+        TeGu .o.
+        TeSu .o.
+        TeRu .o.
+        TaU .o. 
+        TaTsu .o. 
+        TaBu .o. 
+        TaMu .o. 
+        TaNu .o. 
+        TaKu .o. 
+        TaGu .o.
+        TaSu .o.
+        TaRu .o.
+        TeJ .o.
+        TaJ ;
+
+regex All ;

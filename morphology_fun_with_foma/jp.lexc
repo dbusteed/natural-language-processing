@@ -1,0 +1,52 @@
+!!!jp.lexc!!!
+
+Multichar_Symbols +V +J +TE +TA
+
+LEXICON Root
+
+Verb ;
+Adj ;
+
+LEXICON Verb
+
+かう        Vinf;
+いう        Vinf;
+ぬう        Vinf;
+かつ        Vinf;
+よむ        Vinf;
+のむ        Vinf;
+よぶ        Vinf;
+ぬすむ      Vinf;
+かく        Vinf;
+いく        Vinf;
+およぐ      Vinf;
+はなす      Vinf;
+たべる      Vinf;
+おしえる    Vinf;
+いきる      Vinf;
+ねる        Vinf;
+
+LEXICON Adj
+
+たかい      Jinf;
+あつい      Jinf;
+さむい      Jinf;
+かゆい      Jinf;
+ふとい      Jinf;
+ちかい      Jinf;
+おもい      Jinf;
+はやい      Jinf;
+あたらしい  Jinf;
+ふるい      Jinf;
+
+LEXICON Vinf
+
++V:0        #;
++V+TE:^TE   #;
++V+TA:^TA   #;
+
+LEXICON Jinf
+
++J:0        #;
++J+TE:^TE   #;
++J+TA:^TA   #;
